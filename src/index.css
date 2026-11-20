@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1a1025;
+  color: #1e1629;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Subtle dot-grid scrapbook texture for inner pages */
+.scrapbook-paper {
+  background-color: #fffafd;
+  background-image: radial-gradient(rgba(126, 34, 206, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Custom subtle scrollbar for long letters */
+.letter-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.letter-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 39, 119, 0.3);
+  border-radius: 9999px;
+}
